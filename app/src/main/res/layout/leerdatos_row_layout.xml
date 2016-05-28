@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    
+    <TextView   
+		android:id="@+id/tvTabla"   
+		android:layout_width="match_parent"   
+		android:layout_height="wrap_content"  
+		android:padding="5dp"  
+		android:textSize="14sp" /> 
+</LinearLayout>
+ 

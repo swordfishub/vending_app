@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_lista"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etFiltro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Buscador"
+            android:textSize="12sp" >
+
+            
+        </EditText>
+
+         <Button
+             android:id="@+id/btnFin_carga"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:onClick="Finalizar_Carga"
+             android:text="finalizar \n carga"
+             android:textSize="14sp" />
+         
+          <EditText
+            android:id="@+id/etContador"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:hint="Contador"
+            android:inputType="number"
+            android:textSize="12sp">
+			<requestFocus />
+         
+        </EditText>
+
+    </LinearLayout>
+
+	<ListView
+        android:id="@+id/lvLista"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp" 
+        android:paddingLeft="0dp"
+        android:layout_weight="1"/>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#DFE8EB">
+
+    <CheckBox
+        android:id="@+id/cbFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"/>
+   <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:src="@drawable/icon_camara" />
+
+         <Button
+             android:id="@+id/btnIncidencia"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:layout_marginLeft="25dp"
+             android:onClick="Reportar_incidencia"
+             android:text="Reportar incidencia"
+             android:textSize="16sp" />
+
+        
+
+    </LinearLayout>
+</LinearLayout>
+

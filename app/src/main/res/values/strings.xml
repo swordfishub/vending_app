@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Edai Vending</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_preferences">vendingmovil</string>
+
+    <string-array name="menu_inicial">
+        <item>Mis Rutas</item>
+        <item>Mis Plazas</item>
+        <item>Mis Máquinas</item>
+        <item>Productos</item>
+        <item>Mis Cargas</item>
+        <item>Settings</item>
+    </string-array>
+    
+    <string name="registrarse"><u>Si no estás registrado, date de alta</u></string>
+    <string name="regenerarpass"><u>Si no te recuerdas la clave, genera una nueva</u></string>
+    <string name="nuevo_anuncio"><u>Si quieres crea un nuevo anuncio</u></string>
+
+    <string name="name_in_icon_launcher">Vending</string>
+    <string name="title_activity_rutas_">Rutas_Activity</string>
+    <string name="title_activity_plazas_">Plazas_Activity</string>
+    <string name="title_activity_productos_">Productos_Activity</string>
+    <string name="title_activity_maquinas_">Maquinas_Activity</string>
+    <string name="title_activity_cargas_">Cargas_Activity</string>
+    <string name="title_activity_inicio_">Inicio_Activity</string>
+    <string name="title_activity_eventual_">Eventual_Activity</string>
+    <string name="title_activity_posicion_">Posicion_Activity</string>
+    <string name="title_activity_cargando_">Cargando_Activity</string>
+    <string name="MAPKEY">AIzaSyBHqPPRwiTFKyba4hhL8VcxmsWLCoWgMug</string>
+    <string name="title_activity_mapa_">Mapa_Activity</string>
+    <string name="etiq_place_pos"></string>
+    <string name="title_activity_seleccion_producto_">SeleccionProducto_Activity</string>
+    <string name="title_activity_cargando_detalle_">CargandoDetalle_Activity</string>
+    <string name="title_activity_locacion_">Locacion_Activity</string>
+    <string name="title_activity_ruta_dia_">Ruta_dia_Activity</string>
+    <string name="title_activity_mapa__ruta_">Mapa_Ruta_Activity</string>
+    <string name="title_activity_splash_">Splash_Activity</string>
+    <string name="title_activity_main_">Main_Activity</string>
+    <string name="title_activity_lineas_">Lineas_Activity</string>
+    <string name="title_activity_settings_">Settings_Activity</string>
+    <string name="title_activity_alta_">Alta_Activity</string>
+
+</resources>

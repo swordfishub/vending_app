@@ -1,0 +1,339 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_lista"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/etFiltro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Busca un producto" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvfiltro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="(Filtro activo: Se muestran todos)"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MostrarOcultarLL"
+                android:src="@drawable/icon_settings" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- LINHA SEPARADORA -->
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="#B5B5B5" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/llCalendario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+           
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="0dp"
+                android:layout_marginTop="50dp"
+                android:gravity="left"
+                android:padding="0dp"
+                android:text="Filtra por fechas:"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+            
+             <CheckBox
+                android:id="@+id/chekBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp" />
+
+            <TextView
+                android:id="@+id/tvelige"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="0dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingRight="30dp"
+                android:text="Elige "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvfecha1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="0dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="0dp"
+                android:text="Fecha \n desde:"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnCalendariodesde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:onClick="btncalendariodesde_click"
+                android:src="@drawable/calendar_icon" />
+
+            <TextView
+                android:id="@+id/tvFecha2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="Hasta:"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnCalendariohasta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:onClick="btncalendariohasta_click"
+                android:src="@drawable/calendar_icon" />
+        </LinearLayout>
+        <!-- LINHA SEPARADORA -->
+
+        <View
+            android:id="@+id/View02"
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            android:background="#B5B5B5" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp" />
+
+            <TextView
+                android:id="@+id/tvultimos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:layout_marginTop="50dp"
+                android:gravity="left"
+                android:padding="0dp"
+                android:text="Últimos:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etUltimos"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center|top"
+                android:inputType="number"
+               
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tvdias"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:layout_marginTop="50dp"
+                android:gravity="left"
+                android:padding="0dp"
+                android:text="días"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/View03"
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            android:background="#B5B5B5" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/rgUso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center" >
+
+                <RadioButton
+                    android:id="@+id/rbTodos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Todos" />
+
+                <RadioButton
+                    android:id="@+id/rbActivos"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activos" />
+
+              
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/View04"
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            android:background="#B5B5B5" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout4l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/rgTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:checked="true"
+                    android:text="todos"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rbCafe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="café"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rbLatas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="latas"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rbSnack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="snack"
+                    android:textSize="12sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

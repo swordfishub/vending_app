@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.etxeberria_vending"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <permission
+        android:name="com.example.mislugares.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.etxeberria_vending.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/MAPKEY" />
+
+        <activity
+            android:name=".Main_Activity"
+            android:label="@string/title_activity_main_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Splash_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter android:label="@string/name_in_icon_launcher" >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Rutas_Activity"
+            android:label="@string/title_activity_rutas_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Plazas_Activity"
+            android:label="@string/title_activity_plazas_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LeerDatos_Activity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.vending" />
+                <data android:pathPattern=".*..*..*..*..*..*.vending" />
+                <data android:pathPattern=".*..*..*..*..*.vending" />
+                <data android:pathPattern=".*..*..*..*.vending" />
+                <data android:pathPattern=".*..*..*.vending" />
+                <data android:pathPattern=".*..*.vending" />
+                <data android:pathPattern=".*.vending" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Productos_Activity"
+            android:label="@string/title_activity_productos_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maquinas_Activity"
+            android:label="@string/title_activity_maquinas_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Cargas_Activity"
+            android:label="@string/title_activity_cargas_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Inicio_Activity"
+            android:label="@string/title_activity_inicio_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Eventual_Activity"
+            android:label="@string/title_activity_eventual_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Posicion_Activity"
+            android:label="@string/title_activity_posicion_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Cargando_Activity"
+            android:label="@string/title_activity_cargando_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_mapa_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SeleccionProducto_Activity"
+            android:label="@string/title_activity_seleccion_producto_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CargandoDetalle_Activity"
+            android:label="@string/title_activity_cargando_detalle_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Locacion_Activity"
+            android:label="@string/title_activity_locacion_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Ruta_dia_Activity"
+            android:label="@string/title_activity_ruta_dia_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Mapa_Ruta_Activity"
+            android:label="@string/title_activity_mapa__ruta_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Lineas_Activity"
+            android:label="@string/title_activity_lineas_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Settings_Activity"
+            android:label="@string/title_activity_settings_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Alta_Activity"
+            android:label="@string/title_activity_alta_" >
+        </activity>
+        <service
+            android:name="com.example.etxeberria_vending.track.Mi_Servicio"
+            android:enabled="true" />
+
+        <receiver android:name="com.example.etxeberria_vending.track.Alarm_Receiver" />
+    </application>
+
+</manifest>
